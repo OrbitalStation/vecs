@@ -1,31 +1,9 @@
 //!
 //! Crate for convenient usage of OpenGL shaders-like vectors.
 //!
-//! Main feature - powerful constructor:
+//! Main feature - powerful constructor, for
+//! examples check out the `examples` folder.
 //!
-//! ```rust
-//!use vecs::*;
-//!
-//! fn main() {
-//!     let v1 = vec3::new(1., 2., 3.);
-//!     println!("v1 = {:?}", v1);
-//!
-//!     let v2 = vec4::new();
-//!     println!("v2 = {:?}", v2);
-//!
-//!     let v3 = vec4::new(v1, 4.);
-//!     println!("v3 = {:?}", v3);
-//!
-//!     let v4 = bvec1::new(true);
-//!     println!("v4 = {:?}", v4);
-//!
-//!     let v5 = bvec4::new(v4, false, v4);
-//!     println!("v5 = {:?}", v5);
-//!
-//!     let v6 = uvec3::new((2u32, 2u32), (), [1u32]);
-//!     println!("v6 = {:?}", v6);
-//! }
-//! ```
 //!
 
 #![feature(const_trait_impl)]
